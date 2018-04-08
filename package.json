@@ -1,0 +1,25 @@
+{
+  "name": "react-empty",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.js",
+  "author": {
+    "name": "Anthony DI STEFANO"
+  },
+  "dependencies": {
+    "ajv": "^6.4.0",
+    "proptypes": "^1.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "^1.1.4"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
