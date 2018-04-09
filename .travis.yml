@@ -1,0 +1,19 @@
+sudo: false
+
+language: node_js
+node_js:
+  - stable
+
+env:
+  - BROWSER=ChromeCi
+  - BROWSER=Firefox
+
+cache:
+  directories:
+    - ~/.yarn-cache
+    - node_modules
+    - www/node_modules
+
+branches:
+  only:
+    - master
