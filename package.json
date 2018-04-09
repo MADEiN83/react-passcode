@@ -1,9 +1,9 @@
 {
-  "name": "react-passcode",
+  "name": "react-passcode_p",
   "description": "Generate passcode authentication with clickable numbers",
   "version": "0.2.1",
   "private": false,
-  "main": "src/index.js",
+  "main": "build/index.js",
   "author": {
     "name": "Anthony DI STEFANO"
   },
@@ -11,21 +11,30 @@
     "type": "git",
     "url": "https://github.com/MADEiN83/react-passcode.git"
   },
-  "Keywords" : ["react", "passcode", "es6"],
+  "Keywords": [
+    "react",
+    "passcode",
+    "es6"
+  ],
   "dependencies": {
     "ajv": "^6.4.0",
     "proptypes": "^1.1.0",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-scripts": "^1.1.4"
+    "webpack": "^2.7.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1"
   }
 }
