@@ -5,21 +5,26 @@ import Styles from '../styles/Styles';
 const propTypes = {
     count: PropTypes.number.isRequired,
     current: PropTypes.number,
+    emptyChar: PropTypes.string,
+    fullChar: PropTypes.string,
 };
 
 const defaultProps = {
     current: 0,
+    emptyChar: '_',
+    fullChar: '*',
 };
 
 class ResultComponent extends React.Component {
 
     render() {
-        const { count, current } = this.props;
+        const { count, current, emptyChar, fullChar } = this.props;
         let html = [];
+        
         for(let i = 0; i < count; i++) {
             const element = (
-                <span key={i}>
-                    {current > i ? '*' : '_'}&nbsp;
+                <span key={i} style={Styles.char}>
+                    {current > i ? fullChar : emptyChar}&nbsp;
                 </span>
             );
             html.push(element);

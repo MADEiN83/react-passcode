@@ -12,13 +12,20 @@ const defaultProps = {
 
 class SquareComponent extends React.Component {
     _onClickHandler(number) {
+        if(!this.props.onClick) {
+            return;
+        }
+
         this.props.onClick(number);
     }
 
     render() {
         const { label, onClick } = this.props;
+        const enable = onClick != undefined;
+        const styles = enable ? Styles.square : Styles.disabledSquare;
+
         return (
-            <div style={Styles.square} onClick={() => this._onClickHandler(label)}>
+            <div style={styles} onClick={() => this._onClickHandler(label)}>
                 {label}
             </div>
         );
