@@ -113,6 +113,11 @@ class PasscodeComponent extends React.Component {
     
     render() {
         const { passcode } = this.props;
+        
+        if(passcode == undefined || passcode == '') {
+            return null;
+        }
+
         const charCount = passcode.toString().length;
         const disableEvent = this.state.current >= charCount;
         const squares = this._generateSquares(disableEvent);
