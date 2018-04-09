@@ -1,5 +1,5 @@
 {
-  "name": "react-passcode_p",
+  "name": "react-passcode",
   "description": "Generate passcode authentication with clickable numbers",
   "version": "0.2.1",
   "private": false,
