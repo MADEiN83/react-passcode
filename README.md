@@ -1,4 +1,11 @@
 # react-passcode
+[![Build Status](https://travis-ci.org/MADEiN83/react-passcode.svg?branch=master)](https://travis-ci.org/MADEiN83/react-passcode)
+[![npm version](https://badge.fury.io/js/react-passcode.svg)](https://badge.fury.io/js/react-passcode)
+
+## Installation
+```
+npm i react-passcode
+```
 
 ## Usage:
 ```js
